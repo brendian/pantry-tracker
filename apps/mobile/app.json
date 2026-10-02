@@ -1,0 +1,21 @@
+{
+  "expo": {
+    "name": "Pantry Tracker",
+    "slug": "pantry-tracker",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "local.pantrytracker.mobile",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Pantry Tracker uses the camera to scan product barcodes.",
+        "NSLocalNetworkUsageDescription": "Pantry Tracker connects to your Pantry Tracker server on your home network.",
+        "NSAppTransportSecurity": { "NSAllowsArbitraryLoads": true }
+      }
+    },
+    "plugins": [
+      ["expo-camera", { "cameraPermission": "Pantry Tracker uses the camera to scan product barcodes.", "recordAudioAndroid": false }]
+    ]
+  }
+}

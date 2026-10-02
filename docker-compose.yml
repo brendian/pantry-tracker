@@ -1,0 +1,10 @@
+# Runs the API server only. It connects to your existing Postgres server using the values in apps/server/.env.
+services:
+  pantry-api:
+    build:
+      context: .
+      dockerfile: apps/server/Dockerfile
+    env_file: apps/server/.env
+    ports:
+      - "8080:8080"
+    restart: unless-stopped
