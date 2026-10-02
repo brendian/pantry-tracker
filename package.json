@@ -1,0 +1,12 @@
+{
+  "name": "pantry-tracker",
+  "private": true,
+  "workspaces": ["packages/*", "apps/*"],
+  "scripts": {
+    "server": "npm run dev -w @pantry/server",
+    "desktop": "npm run dev -w @pantry/desktop",
+    "mobile": "npm run start -w @pantry/mobile",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "npm test -w @pantry/server"
+  }
+}
